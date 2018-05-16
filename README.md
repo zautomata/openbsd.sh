@@ -13,7 +13,7 @@ password="password"
 Then copy/paste this line on a new installation of openbsd with a path to the configruation file.
 
 ```
-obsdc="$HOME/openbsd.config";cd $(mktemp -d);echo "Creating tmp dir: `pwd`;ftp -V "https://raw.githubusercontent.com/zautomata/openbsd.sh/master/main.sh" >main.sh;chmod +x main.sh;main.sh $obsdc;cd - > /dev/null
+obsdc="$HOME/openbsd.config";cd $(mktemp -d);echo "Creating tmp dir: `pwd`";ftp -V "https://raw.githubusercontent.com/zautomata/openbsd.sh/master/main.sh" >main.sh;chmod +x main.sh;main.sh $obsdc;cd - > /dev/null
 
 ```
 ## Further info 
