@@ -1,5 +1,5 @@
 # openbsd.sh
-openbsd.sh is a collection of shell scripts that automatically configure newly insallted openbsd (virtual)machines.
+openbsd.sh is a collection of shell scripts that automatically configure newly installed openbsd (virtual)machines.
 
 ## Usage
 make a configuration file i.e. openbsd.config
@@ -13,7 +13,7 @@ password="password"
 Then copy/paste this line on a new installation of openbsd with a path to the configruation file.
 
 ```
-obsdc="$HOME/Opensource/openbsd.sh/openbsd.config";cd $(mktemp -d);ftp -V "https://raw.githubusercontent.com/zautomata/openbsd.sh/master/main.sh" >main.sh;chmod +x main.sh;main.sh $obsdc;cd - > /dev/null
+obsdc="$HOME/openbsd.config";cd $(mktemp -d);pwd;ftp -V "https://raw.githubusercontent.com/zautomata/openbsd.sh/master/main.sh" >main.sh;chmod +x main.sh;main.sh $obsdc;cd - > /dev/null
 
 ```
 ## Further info 

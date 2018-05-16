@@ -7,5 +7,5 @@ start(){
 	ftp -V "https://raw.githubusercontent.com/zautomata/openbsd.sh/master/$1.sh" >$1.sh;chmod +x $1.sh;$1.sh;
 }
 
-start mail
 #start mail
+start networking 
