@@ -1,3 +1,5 @@
+openbsd.config
+
 # Prerequisites
 *.d
 
